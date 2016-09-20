@@ -8,7 +8,7 @@ import { QsService }        from '../qs.service';
 
 
 @Component({
-    selector: 'my-xgw',
+    selector: 'right-view',
     templateUrl:'app/xgw/xgw.component.html',
     styleUrls:['app/xgw/xgw.component.css'],
 })

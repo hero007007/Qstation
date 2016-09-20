@@ -8,7 +8,7 @@ import { QsService }        from '../qs.service';
 
 
 @Component({
-    selector: 'my-ds',
+    selector: 'right-view',
     templateUrl:'app/ds/ds.component.html',
     styleUrls:['app/ds/ds.component.css'],
 })

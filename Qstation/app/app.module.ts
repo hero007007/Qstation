@@ -9,31 +9,30 @@ import { HttpModule, JsonpModule }  from '@angular/http';
 import { routing }       from './app.routing';
 import { AppComponent }  from './app.component';
 import { QsService }     from './qs.service';
-import { DSComponent }          from './ds/ds.component';
-import { GGComponent }          from './gg/gg.component';
-import { JYComponent }          from './jy/jy.component';
-import { WDComponent }          from './wd/wd.component';
-import { XGWComponent }         from './xgw/xgw.component';
-import { ZXComponent }          from './zx/zx.component';
-import { ZXHQComponent }        from './zxhq/zxhq.component';
+
+import { DSModule }     from './ds/ds.module';
+import { GGModule }     from './gg/gg.module';
+import { JYModule }     from './jy/jy.module';
+import { WDModule }     from './wd/wd.module';
+import { XGWModule }    from './xgw/xgw.module';
+import { ZXModule }     from './zx/zx.module';
+import { ZXHQModule }   from './zxhq/zxhq.module';
 @NgModule({
     imports:      [
         BrowserModule,
         FormsModule,
         routing,
         HttpModule,
-        JsonpModule
+        JsonpModule,
+        DSModule,
+        GGModule,
+        JYModule,
+        WDModule,
+        XGWModule,
+        ZXModule,
+        ZXHQModule
     ],
-    declarations: [
-        AppComponent,
-        DSComponent,
-        GGComponent,
-        JYComponent,
-        WDComponent,
-        XGWComponent,
-        ZXComponent,
-        ZXHQComponent
-    ],
+    declarations: [ AppComponent ],
     bootstrap:    [ AppComponent ],
     providers:    [ QsService ]
 })
