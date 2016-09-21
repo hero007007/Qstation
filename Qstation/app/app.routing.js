@@ -26,7 +26,7 @@ var appRoutes = [
         component: xgw_component_1.XGWComponent
     },
     {
-        path: 'ZX',
+        path: 'zx',
         component: zx_component_1.ZXComponent
     },
     {

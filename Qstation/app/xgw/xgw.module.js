@@ -15,14 +15,24 @@ var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var forms_1 = require('@angular/forms');
 var xgw_component_1 = require('./xgw.component');
+var xgw_service_1 = require('./xgw.service');
+var gn_component_1 = require('./gn.component');
+var rmyz_component_1 = require('./rmyz.component');
+var xgw_routing_1 = require('./xgw.routing');
 var XGWModule = (function () {
     function XGWModule() {
     }
     XGWModule = __decorate([
         core_1.NgModule({
-            imports: [common_1.CommonModule, forms_1.FormsModule],
-            declarations: [xgw_component_1.XGWComponent],
-            exports: [xgw_component_1.XGWComponent]
+            imports: [common_1.CommonModule, forms_1.FormsModule,
+                xgw_routing_1.xgwRouting
+            ],
+            declarations: [xgw_component_1.XGWComponent,
+                gn_component_1.gn_component,
+                rmyz_component_1.rmyz_component
+            ],
+            exports: [xgw_component_1.XGWComponent],
+            providers: [xgw_service_1.xgw_service]
         }), 
         __metadata('design:paramtypes', [])
     ], XGWModule);

@@ -12,16 +12,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by jlch on 16/9/20.
  */
 var core_1 = require('@angular/core');
+var xgw_service_1 = require('./xgw.service');
 var XGWComponent = (function () {
-    function XGWComponent() {
+    //xgws:any
+    function XGWComponent(xgws) {
+        this.xgws = xgws;
+        this.items_info = this.xgws.get_all_info();
     }
+    XGWComponent.prototype.ngOnInit = function () {
+        //console.log(this.items_info)
+    };
     XGWComponent = __decorate([
         core_1.Component({
             selector: 'my-xgw',
             templateUrl: 'app/xgw/xgw.component.html',
             styleUrls: ['app/xgw/xgw.component.css'],
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [xgw_service_1.xgw_service])
     ], XGWComponent);
     return XGWComponent;
 }());
