@@ -31,7 +31,7 @@ const appRoutes: Routes = [
         component: XGWComponent
     },
     {
-        path: 'ZX',
+        path: 'zx',
         component: ZXComponent
     },
     {
