@@ -17,9 +17,9 @@ var XGWComponent = (function () {
     //xgws:any
     function XGWComponent(xgws) {
         this.xgws = xgws;
-        this.items_info = this.xgws.get_all_info();
     }
     XGWComponent.prototype.ngOnInit = function () {
+        this.items_info = this.xgws.get_all_info();
         //console.log(this.items_info)
     };
     XGWComponent = __decorate([

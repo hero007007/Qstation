@@ -17,11 +17,11 @@ export class XGWComponent implements  OnInit {
     items_info:any ;
     //xgws:any
     constructor(private xgws:xgw_service){
-        this.items_info=this.xgws.get_all_info()
+
     }
     ngOnInit()
     {
-
+        this.items_info=this.xgws.get_all_info()
 
         //console.log(this.items_info)
     }
