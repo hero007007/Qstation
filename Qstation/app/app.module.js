@@ -18,13 +18,13 @@ var http_1 = require('@angular/http');
 var app_routing_1 = require('./app.routing');
 var app_component_1 = require('./app.component');
 var qs_service_1 = require('./qs.service');
-var ds_component_1 = require('./ds/ds.component');
-var gg_component_1 = require('./gg/gg.component');
-var jy_component_1 = require('./jy/jy.component');
-var wd_component_1 = require('./wd/wd.component');
-var xgw_component_1 = require('./xgw/xgw.component');
-var zx_component_1 = require('./zx/zx.component');
-var zxhq_component_1 = require('./zxhq/zxhq.component');
+var ds_module_1 = require('./ds/ds.module');
+var gg_module_1 = require('./gg/gg.module');
+var jy_module_1 = require('./jy/jy.module');
+var wd_module_1 = require('./wd/wd.module');
+var xgw_module_1 = require('./xgw/xgw.module');
+var zx_module_1 = require('./zx/zx.module');
+var zxhq_module_1 = require('./zxhq/zxhq.module');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -35,18 +35,16 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 app_routing_1.routing,
                 http_1.HttpModule,
-                http_1.JsonpModule
+                http_1.JsonpModule,
+                ds_module_1.DSModule,
+                gg_module_1.GGModule,
+                jy_module_1.JYModule,
+                wd_module_1.WDModule,
+                xgw_module_1.XGWModule,
+                zx_module_1.ZXModule,
+                zxhq_module_1.ZXHQModule
             ],
-            declarations: [
-                app_component_1.AppComponent,
-                ds_component_1.DSComponent,
-                gg_component_1.GGComponent,
-                jy_component_1.JYComponent,
-                wd_component_1.WDComponent,
-                xgw_component_1.XGWComponent,
-                zx_component_1.ZXComponent,
-                zxhq_component_1.ZXHQComponent
-            ],
+            declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent],
             providers: [qs_service_1.QsService]
         }), 

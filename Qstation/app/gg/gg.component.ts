@@ -8,7 +8,7 @@ import { QsService }        from '../qs.service';
 
 
 @Component({
-    selector: 'right-view',
+    selector: 'my-gg',
     templateUrl:'app/gg/gg.component.html',
     styleUrls:['app/gg/gg.component.css'],
 })

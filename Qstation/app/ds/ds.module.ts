@@ -4,7 +4,7 @@
 import { NgModule }           from '@angular/core';
 import { CommonModule }       from '@angular/common';
 import { FormsModule }        from '@angular/forms';
-import { DSComponent }        from 'ds.component'
+import { DSComponent }        from './ds.component'
 
 @NgModule({
     imports:      [ CommonModule, FormsModule ],
@@ -12,4 +12,5 @@ import { DSComponent }        from 'ds.component'
     exports:      [ DSComponent ]
 
 })
-export class DSModule { }
+export class DSModule {
+}

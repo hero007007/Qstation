@@ -1,2 +1,49 @@
-<h1>11111</h1>
-<router-outlet></router-outlet>
+<div class="container-fluid main-bg">
+    <div class="row top-bar">
+        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2s ">
+            这里是logo
+            <a routerLink="zxhq" routerLinkActive="active"><div class="row left-bar">
+                <div class="col-md-12">自选行情</div>
+            </div></a>
+            <a routerLink="gg" routerLinkActive="active"><div class="row left-bar">
+                <div class="col-md-12">个股</div>
+            </div></a>
+            <a routerLink="xgw" routerLinkActive="active"><div class="row left-bar">
+                <div class="col-md-12">选股王</div>
+            </div></a>
+            <a routerLink="zx" routerLinkActive="active"><div class="row left-bar">
+                <div class="col-md-12">资讯</div>
+            </div></a>
+            <a routerLink="jy" routerLinkActive="active"><div class="row left-bar">
+                <div class="col-md-12">交易</div>
+            </div></a>
+            <a routerLink="ds" routerLinkActive="active"><div class="row left-bar">
+                <div class="col-md-12">大势</div>
+            </div></a>
+            <a routerLink="wd" routerLinkActive="active"><div class="row left-bar">
+                <div class="col-md-12">我的</div>
+            </div></a>
+
+
+
+        </div>
+        <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10">
+            右边
+            <div class="row">
+                <router-outlet>
+
+                </router-outlet>
+
+                <!--<right-view>-->
+                <!--</right-view>-->
+
+                <!--写一个right-view放这里,right-view里面装路由插座-->
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</div>

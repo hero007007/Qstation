@@ -4,7 +4,7 @@
 import { NgModule }           from '@angular/core';
 import { CommonModule }       from '@angular/common';
 import { FormsModule }        from '@angular/forms';
-import { WDComponent }        from 'wd.component'
+import { WDComponent }        from './wd.component'
 
 @NgModule({
     imports:      [ CommonModule, FormsModule ],

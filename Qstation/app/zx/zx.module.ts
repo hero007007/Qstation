@@ -4,7 +4,7 @@
 import { NgModule }           from '@angular/core';
 import { CommonModule }       from '@angular/common';
 import { FormsModule }        from '@angular/forms';
-import { ZXComponent }        from 'zx.component'
+import { ZXComponent }        from './zx.component'
 
 @NgModule({
     imports:      [ CommonModule, FormsModule ],

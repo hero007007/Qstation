@@ -8,7 +8,7 @@ import { QsService }        from '../qs.service';
 
 
 @Component({
-    selector: 'right-view',
+    selector: 'my-zx',
     templateUrl:'app/zx/zx.component.html',
     styleUrls:['app/zx/zx.component.css'],
 })
