@@ -9,28 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /**
- * Created by jlch on 16/9/20.
+ * Created by wang on 2016/9/21.
  */
 var core_1 = require('@angular/core');
-var xgw_service_1 = require('./xgw.service');
-var XGWComponent = (function () {
-    //xgws:any
-    function XGWComponent(xgws) {
-        this.xgws = xgws;
+var rmyz_component = (function () {
+    function rmyz_component() {
     }
-    XGWComponent.prototype.ngOnInit = function () {
-        this.items_info = this.xgws.get_all_info();
-        //console.log(this.items_info)
-    };
-    XGWComponent = __decorate([
+    rmyz_component = __decorate([
         core_1.Component({
-            selector: 'my-xgw',
-            templateUrl: 'app/xgw/xgw.component.html',
-            styleUrls: ['app/xgw/xgw.component.css'],
+            selector: 'xgw-rmyz',
+            template: "\n        <div>rmyz</div>\n\n        "
         }), 
-        __metadata('design:paramtypes', [xgw_service_1.xgw_service])
-    ], XGWComponent);
-    return XGWComponent;
+        __metadata('design:paramtypes', [])
+    ], rmyz_component);
+    return rmyz_component;
 }());
-exports.XGWComponent = XGWComponent;
-//# sourceMappingURL=xgw.component.js.map
+exports.rmyz_component = rmyz_component;
+//# sourceMappingURL=rmyz.component.js.map
