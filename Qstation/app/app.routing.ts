@@ -28,7 +28,7 @@ const appRoutes: Routes = [
     },
     {
         path:'xgw',
-        component: XGWComponent
+        loadChildren: 'app/xgw/xgw.module#XGWModule'
     },
     {
         path: 'zx',

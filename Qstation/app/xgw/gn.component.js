@@ -17,8 +17,7 @@ var gn_component = (function () {
     }
     gn_component = __decorate([
         core_1.Component({
-            selector: 'xgw-gn',
-            template: "\n        <div>gn</div>\n        "
+            template: "\n        <div>\u8FD9\u91CC\u662Fgn</div>\n        "
         }), 
         __metadata('design:paramtypes', [])
     ], gn_component);
