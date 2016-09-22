@@ -5,10 +5,10 @@ import {Component} from '@angular/core';
 
 
 @Component({
-    selector:'xgw-gn',
+
     template:
         `
-        <div>gn</div>
+        <div>这里是gn</div>
         `
 })
 export class gn_component{

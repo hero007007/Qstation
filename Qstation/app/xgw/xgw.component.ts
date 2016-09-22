@@ -14,7 +14,7 @@ import {xgw_service}        from './xgw.service'
 
 })
 export class XGWComponent implements  OnInit {
-    items_info:any ;
+    items_info:any;
     //xgws:any
     constructor(private xgws:xgw_service){
 
